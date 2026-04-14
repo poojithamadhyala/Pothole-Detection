@@ -2,282 +2,256 @@
 
 <br/>
 
-# Road safety isn't always visible.
-## *So we made it visible.*
+```
+██████╗  ██████╗ ████████╗██╗  ██╗ ██████╗ ██╗     ███████╗
+██╔══██╗██╔═══██╗╚══██╔══╝██║  ██║██╔═══██╗██║     ██╔════╝
+██████╔╝██║   ██║   ██║   ███████║██║   ██║██║     █████╗
+██╔═══╝ ██║   ██║   ██║   ██╔══██║██║   ██║██║     ██╔══╝
+██║     ╚██████╔╝   ██║   ██║  ██║╚██████╔╝███████╗███████╗
+╚═╝      ╚═════╝    ╚═╝   ╚═╝  ╚═╝ ╚═════╝ ╚══════╝╚══════╝
+
+         D E T E C T I O N   ·   A I
+```
 
 <br/>
 
-<img src="https://readme-typing-svg.demolab.com?font=Georgia&size=22&pause=2000&color=FF4444&center=true&vCenter=true&width=700&lines=🚗+Pothole+Detection+AI;Live+Detection.+GPS+Mapping.+Voice+Alerts.;YOLOv8n+%7C+Android+%7C+Community+Reporting" alt="Typing SVG" />
-
-<br/><br/>
-
-![Model](https://img.shields.io/badge/Model-YOLOv8n_ONNX-6C63FF?style=for-the-badge&logo=pytorch&logoColor=white)
-![mAP](https://img.shields.io/badge/mAP%4050-82.2%25-00C896?style=for-the-badge)
-![Platform](https://img.shields.io/badge/Android-Native_App-3DDC84?style=for-the-badge&logo=android&logoColor=white)
-![GPS](https://img.shields.io/badge/GPS-Location_Aware-FF6B6B?style=for-the-badge&logo=googlemaps&logoColor=white)
-![Voice](https://img.shields.io/badge/Voice-Driver_Alerts-FFD21E?style=for-the-badge)
-![PWA](https://img.shields.io/badge/PWA-Web_Ready-5A67D8?style=for-the-badge&logo=pwa&logoColor=white)
+### *Road safety isn't always visible.*
+### *So we made it visible.*
 
 <br/>
 
-> Every year, millions of vehicle accidents are caused by potholes — hazards that are **easy to miss and hard to avoid**.  
-> **Pothole Detection AI** uses real-time computer vision, GPS tracking, and voice warnings to keep drivers safe.
+![YOLOv8n](https://img.shields.io/badge/YOLOv8n_ONNX-~41ms_CPU-000000?style=flat-square&labelColor=6C63FF&color=111)
+![mAP](https://img.shields.io/badge/mAP@50-82.2%25-000000?style=flat-square&labelColor=00C896&color=111)
+![Android](https://img.shields.io/badge/Android-Kotlin-000000?style=flat-square&labelColor=3DDC84&color=111)
+![GPS](https://img.shields.io/badge/GPS-Location_Aware-000000?style=flat-square&labelColor=FF6B6B&color=111)
+![PWA](https://img.shields.io/badge/PWA-Installable-000000?style=flat-square&labelColor=5A67D8&color=111)
+![Spaces](https://img.shields.io/badge/HuggingFace-Spaces-000000?style=flat-square&labelColor=FFD21E&color=111)
 
 <br/>
-
----
 
 </div>
 
-## 🎬 Demo Video
-
-> *"Road safety isn't always visible. So we made it visible."*
-
-The system detects potholes in real-time, pins them on a live GPS map, and speaks driver alerts — even when your navigation app is open in the foreground.
-
-<!-- Replace with your actual video link -->
-<!-- [![Watch the Demo](https://img.shields.io/badge/▶_Watch_Demo-FF0000?style=for-the-badge&logo=youtube)](YOUR_VIDEO_LINK) -->
-
 ---
 
-## 📱 App Screens — Pothole Navigate
+## Demo
 
 <div align="center">
 
-| 🗺️ Navigate | 📸 Detect | 📋 Report |
-|:---:|:---:|:---:|
-| GPS monitoring + voice alerts | AI detection + community logging | Manual reporting + severity tagging |
-| Start / Stop monitoring | Camera or gallery upload | Low / Medium / High severity |
-| Distance-aware spoken warnings | Bounding boxes + confidence scores | Live community database feed |
+[![Watch the Demo](https://img.youtube.com/vi/j16wN9h2V9I/maxresdefault.jpg)](https://youtu.be/j16wN9h2V9I)
+
+*Click to watch — Road safety isn't always visible. So we made it visible.*
 
 </div>
 
----
-
-## 🌟 Key Features
-
-| | Feature | Description |
-|--|--------|-------------|
-| 🎯 | **AI Detection** | YOLOv8n detects potholes with **82.2% mAP@50** on real dashcam footage |
-| 📍 | **Live GPS Logging** | Every detection auto-pins to a GPS map — no manual input needed |
-| 🔊 | **Voice Driver Alerts** | Spoken distance warnings: *"Pothole ahead — 80 metres"* |
-| 🗺️ | **Community Database** | Detections from all users feed a shared pothole map |
-| 📊 | **Severity Tagging** | AI and community reports tagged Low / Medium / High |
-| 📲 | **Installable PWA** | Add to home screen like a native app — no App Store needed |
+<br/>
 
 ---
 
-## 🔊 How the Voice Alert System Works
+Every year, potholes cause millions of vehicle accidents and billions in damage — hazards that appear without warning and disappear from public records just as fast. This project changes that. **Pothole Detection AI** is a full-stack road safety system: a fine-tuned YOLOv8n model detects potholes in real time, a GPS layer logs every finding to a live map, and a voice alert system warns drivers before they reach the hazard — all running on a phone, no special hardware required.
+
+<br/>
+
+---
+
+## The Product
+
+Three screens. One purpose.
+
+```
+NAVIGATE          DETECT            REPORT
+─────────         ──────────        ──────────────
+GPS monitoring    Camera / gallery  One-tap location
+Voice alerts      AI bounding box   Severity tagging
+Distance-aware    Community log     Community feed
+Start / Stop      Confidence score  Low / Med / High
+```
+
+The **Navigate** tab runs silently in the background while you drive — polling GPS every 3 seconds and firing spoken warnings when you close in on a logged pothole. The **Detect** tab runs the model on any road image and pushes the result to a shared database. The **Report** tab lets anyone tag a hazard manually, building the community dataset over time.
+
+<br/>
+
+---
+
+## Voice Alert Logic
 
 > *This project uses a YOLO-based model to detect potholes from road data. It integrates with a GPS-based mobile interface for location-aware detection. The system estimates the distance to hazards ahead, and a voice assistant alerts the driver — improving road safety in real time.*
 
 ```
-Driver is moving →
-  GPS polls location every 3 seconds →
-    Haversine formula calculates distance to each logged pothole →
-      🟡 150–100m  →  "Caution! Pothole detected ahead."
-      🟠 100–50m   →  "Warning! Pothole detected. Slow down!"
-      🔴  < 50m    →  "Danger! Pothole immediately ahead. Slow down!"
+GPS polls every 3 seconds
+  └── Haversine distance → each logged pothole
+        ├── 100–150 m   →   "Caution. Pothole detected ahead."
+        ├──  50–100 m   →   "Warning. Pothole detected. Slow down."
+        └──     < 50 m  →   "Danger. Pothole immediately ahead."
 ```
 
-Alerts fire via **Web Speech API** — works even when the tab is backgrounded with Google Maps open.
+Alerts are spoken via the **Web Speech API** and fire even when the tab is backgrounded — so Google Maps can stay open in the foreground.
+
+<br/>
 
 ---
 
-## 📊 Model Performance
+## Model Performance
 
-<div align="center">
+| Metric | Result |
+|---|---|
+| mAP@50 | **82.2 %** |
+| Precision | **82.2 %** |
+| Recall | **74.4 %** |
+| Inference speed (CPU) | **~41 ms / frame** |
+| Architecture | YOLOv8n ONNX |
+| Training data | 656 annotated dashcam frames |
 
-| Metric | Value |
-|--------|-------|
-| 🎯 mAP@50 | **82.2%** |
-| 🔍 Precision | **82.2%** |
-| 📡 Recall | **74.4%** |
-| ⚡ Inference Speed (CPU) | **~41 ms / frame** |
-| 🏗️ Architecture | YOLOv8n ONNX |
-| 🖼️ Training Data | 656 annotated dashcam frames |
-
-</div>
+<br/>
 
 ---
 
-## 🏗️ System Architecture
+## Architecture
 
 ```
-📱 Pothole Navigate App
+Pothole Navigate — Android (Kotlin, Pixel 7 API 37)
 │
-├── 🗺️  Navigate Tab
-│   ├── GPS watchPosition() → monitors location every 3s
-│   ├── Haversine distance calculation to known potholes
-│   ├── Voice alerts via Web Speech API (background-safe)
-│   └── Start / Stop monitoring toggle
+├── Navigate Tab
+│     GPS watchPosition() ──► Haversine distance check
+│     Voice alert ◄────────── Web Speech API (background-safe)
 │
-├── 📸  Detect Tab
-│   ├── Upload via Camera or Gallery
-│   ├── YOLOv8n ONNX inference (~41ms, CPU)
-│   ├── Bounding boxes + confidence scores rendered
-│   ├── GPS coordinates captured automatically
-│   └── Detection logged to community database
+├── Detect Tab
+│     Image input (Camera / Gallery)
+│     └── YOLOv8n ONNX ──► Bounding boxes + confidence scores
+│                      └──► GPS-tagged entry ──► Community DB
 │
-└── 📋  Report Tab
-    ├── One-tap GPS location capture
-    ├── Severity selection: Low / Medium / High
-    ├── "Report Pothole Here" → writes to shared DB
-    └── Community reports feed (live, refreshable)
+└── Report Tab
+      GPS auto-capture ──► Severity (Low / Med / High)
+      "Report Pothole" ──► Community DB
+      Community feed   ◄── Live refresh
+
+
+Web App — Gradio 5.29 + FastAPI (Hugging Face Spaces)
+│
+├── Same detection pipeline (ONNX, server-side)
+├── Folium map — dark CartoDB tiles, red pulsing pins
+├── gr.Timer(5s) ──► server-side proximity check
+└── Service Worker ──► PWA, offline map tile cache
 ```
+
+<br/>
 
 ---
 
-## 🛠️ Tech Stack
-
-<div align="center">
+## Tech Stack
 
 | Layer | Technology |
-|-------|-----------|
-| **AI Model** | YOLOv8n ONNX via Ultralytics |
-| **Mobile App** | Android (Kotlin) — Pixel 7 API 37 |
-| **Web App** | Gradio 5.29 + FastAPI + uvicorn |
-| **Map** | Folium + CartoDB dark_matter tiles |
-| **GPS + Voice** | Browser Web APIs / Android Location APIs |
-| **Community DB** | Shared pothole log (GPS + severity + timestamp) |
-| **Offline** | Service Worker + PWA manifest |
-| **Deployment** | Hugging Face Spaces |
+|---|---|
+| AI Model | YOLOv8n ONNX via Ultralytics |
+| Android App | Kotlin — Pixel 7 API 37 |
+| Web Backend | Gradio 5.29 + FastAPI + uvicorn |
+| Map | Folium + CartoDB dark_matter |
+| GPS / Voice | Browser Web APIs + Android Location |
+| Community DB | Shared GPS + severity + timestamp log |
+| Offline | Service Worker + Web App Manifest |
+| Deployment | Hugging Face Spaces |
 
-</div>
+<br/>
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 pothole-detection/
-├── 📂 app/
-│   ├── 🐍 app.py              # Gradio UI + FastAPI + detection logic
-│   ├── 🔔 alert_system.py     # Standalone desktop alert (OpenCV + pyttsx3)
-│   └── 🤖 best.onnx           # Fine-tuned YOLOv8n weights
-├── 📂 android/                # Native Android app (Kotlin)
+│
+├── app/
+│   ├── app.py              Main web app — Gradio UI + FastAPI + detection
+│   ├── alert_system.py     Standalone desktop alert (OpenCV + pyttsx3)
+│   └── best.onnx           Fine-tuned YOLOv8n weights
+│
+├── android/
 │   └── PotholeDetectionApp/
 │       ├── manifests/
-│       ├── kotlin+java/       # MainActivity, Detection, Alert logic
+│       ├── kotlin+java/    MainActivity, Detection, Alert, Report
 │       └── res/
-├── 📂 landing/
-│   └── 🌐 index.html          # Cinematic hero landing page
-├── 📂 src/
-│   ├── train.py               # YOLOv8 training script
-│   ├── predict.py             # Batch prediction
-│   └── evaluate.py            # Model evaluation
-├── 📂 notebooks/
+│
+├── landing/
+│   └── index.html          Cinematic hero landing page
+│
+├── src/
+│   ├── train.py
+│   ├── predict.py
+│   └── evaluate.py
+│
+├── notebooks/
 │   ├── 01_data_exploration.ipynb
 │   └── 02_training.ipynb
-└── 📄 requirements.txt
+│
+└── requirements.txt
 ```
+
+<br/>
 
 ---
 
-## ⚡ Quick Start — Web App
+## Quick Start
 
-### 1️⃣ Clone & Install
-
+**Install**
 ```bash
 git clone https://github.com/poojithamadhyala/pothole-detection.git
 cd pothole-detection
 pip install -r requirements.txt
 ```
 
-### 2️⃣ Run
-
+**Run the web app**
 ```bash
 cd app
 python app.py
-# → Open http://localhost:7860
+# → http://localhost:7860
 ```
 
-> 💡 GPS requires **HTTPS or localhost** — `navigator.geolocation` won't activate on plain `http://192.168.x.x`
+> GPS requires HTTPS or `localhost` — `navigator.geolocation` will not activate on a plain LAN address.
 
-### 3️⃣ Local Alert System (Webcam / Dashcam)
-
+**Run the local alert system**
 ```bash
-python app/alert_system.py                         # Live webcam
-python app/alert_system.py --source road.mp4       # From video file
-python app/alert_system.py --demo                  # Demo mode
+python app/alert_system.py                        # live webcam
+python app/alert_system.py --source road.mp4      # from video file
+python app/alert_system.py --demo                 # no camera needed
 python app/alert_system.py --conf 0.55 --cooldown 3
 ```
 
----
-
-## 📱 Using the Android App
-
-### 🗺️ Navigate Tab — Driver Alert Mode
-1. Tap **Start Monitoring** — GPS activates, green dot confirms *"GPS active — monitoring..."*
-2. Toggle **Voice Alerts** on
-3. Drive normally — spoken warnings fire automatically as you approach logged potholes
-4. Keep Google Maps open separately; alerts still fire in background
-
-### 📸 Detect Tab — AI Detection
-1. Tap **Camera** or **Gallery** to load a road image
-2. Hit **Detect & Log Potholes** — model annotates with bounding boxes instantly
-3. Detections are logged with GPS coordinates to the community database
-4. Confidence scores and total pothole count shown
-
-### 📋 Report Tab — Community Reporting
-1. GPS coordinates are auto-captured (green dot confirms location)
-2. Select severity: **Low / Medium / High**
-3. Tap **Report Pothole Here** — pins it to the shared community map
-4. Scroll the **Community Reports** feed to see all logged hazards from all users
+<br/>
 
 ---
 
-## 🚨 Alert Severity Levels
-
-| Level | Distance | Voice Message |
-|-------|----------|---------------|
-| 🟡 Caution | 100–150 m | *"Caution! Pothole detected ahead."* |
-| 🟠 Warning | 50–100 m | *"Warning! Pothole detected. Slow down!"* |
-| 🔴 Danger | < 50 m | *"Danger! Pothole immediately ahead. Slow down!"* |
-
----
-
-## 🌐 PWA / Offline Support
-
-| Feature | Online | Offline |
-|---------|:------:|:-------:|
-| Pothole detection | ✅ | ❌ Needs server |
-| GPS tracking | ✅ | ✅ |
-| Voice alerts | ✅ | ✅ iOS / ⚠️ Android |
-| Map display | ✅ Full tiles | ✅ Cached tiles |
-| App shell | ✅ Network | ✅ Service worker |
-| Community database | ✅ Live | 🔄 IndexedDB planned |
-
----
-
-## 🏋️ Training Your Own Model
+## Training
 
 ```bash
 python src/train.py
 ```
 
 | Parameter | Value |
-|-----------|-------|
+|---|---|
 | Base model | `yolov8n.pt` |
-| Dataset | Pothole Detection v12 (Roboflow) |
+| Dataset | Pothole Detection v12 — Roboflow |
 | Epochs | 100 |
 | Image size | 640 |
-| Batch | 16 |
+| Batch size | 16 |
 | Optimizer | AdamW |
 
 ```bash
-# Export to ONNX after training
+# Export to ONNX
 yolo export model=runs/detect/pothole/weights/best.pt format=onnx imgsz=640
 ```
 
+<br/>
+
 ---
 
-## 🚢 Deploy to Hugging Face Spaces
+## Deployment — Hugging Face Spaces
 
 ```python
 from huggingface_hub import HfApi
 api = HfApi()
-for local, remote in [("app/app.py", "app.py"), ("requirements.txt", "requirements.txt")]:
+for local, remote in [
+    ("app/app.py", "app.py"),
+    ("requirements.txt", "requirements.txt")
+]:
     api.upload_file(
         path_or_fileobj=local,
         path_in_repo=remote,
@@ -286,34 +260,48 @@ for local, remote in [("app/app.py", "app.py"), ("requirements.txt", "requiremen
     )
 ```
 
-> `gradio` and `fastapi` are auto-installed by HF Spaces — don't add them to `requirements.txt`.
+`gradio` and `fastapi` are installed automatically by HF Spaces from the README front-matter. Do not add them to `requirements.txt`.
+
+<br/>
 
 ---
 
-## 🗺️ Roadmap
+## Offline & PWA Behaviour
 
-| Phase | Status | What |
-|-------|:------:|------|
-| **Phase 1 — PWA** | ✅ Done | Service worker, manifest, offline map cache, Add to Home Screen |
-| **Phase 2 — Android App** | ✅ Done | Native Kotlin app — Navigate, Detect, Report tabs |
-| **Phase 3 — Client Inference** | 🔄 Planned | ONNX Runtime Web — detect entirely in browser, no server |
-| **Phase 4 — Offline Storage** | 🔄 Planned | IndexedDB + Background Sync for offline-first |
-| **Phase 5 — Shared Cloud DB** | 🔮 Future | Synced community pothole database across all users globally |
+| Feature | Online | Offline |
+|---|:---:|:---:|
+| Pothole detection | Yes | No — requires server |
+| GPS tracking | Yes | Yes |
+| Voice alerts | Yes | Yes (iOS) / Partial (Android) |
+| Map display | Full tiles | Cached tiles only |
+| App shell | Network | Service worker cache |
+| Community database | Live | IndexedDB — planned Phase 4 |
+
+<br/>
 
 ---
 
-## 👩‍💻 Author
+## Roadmap
+
+| Phase | Status | Scope |
+|---|:---:|---|
+| Phase 1 — PWA | Done | Service worker, manifest, offline tile cache, Add to Home Screen |
+| Phase 2 — Android App | Done | Native Kotlin — Navigate, Detect, Report tabs |
+| Phase 3 — Client Inference | Planned | ONNX Runtime Web — full browser inference, no server |
+| Phase 4 — Offline Storage | Planned | IndexedDB log + Background Sync |
+| Phase 5 — Shared Cloud DB | Future | Globally synced community pothole database |
+
+<br/>
+
+---
 
 <div align="center">
 
 **Poojitha Madhyala**
 
-[![GitHub](https://img.shields.io/badge/GitHub-poojithamadhyala-181717?style=for-the-badge&logo=github)](https://github.com/poojithamadhyala)
+[![GitHub](https://img.shields.io/badge/GitHub-poojithamadhyala-111?style=flat-square&logo=github)](https://github.com/poojithamadhyala)
+[![YouTube](https://img.shields.io/badge/Demo-YouTube-FF0000?style=flat-square&logo=youtube)](https://youtu.be/j16wN9h2V9I)
 
-*Built for safer roads — one detection at a time* 🚗
-
-<br/>
-
-⭐ **If this project helped you, please give it a star!** ⭐
+*Built for safer roads.*
 
 </div>
