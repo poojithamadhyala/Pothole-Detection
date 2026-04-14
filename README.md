@@ -1,22 +1,6 @@
 <div align="center">
 
-<br/>
-
-```
-██████╗  ██████╗ ████████╗██╗  ██╗ ██████╗ ██╗     ███████╗
-██╔══██╗██╔═══██╗╚══██╔══╝██║  ██║██╔═══██╗██║     ██╔════╝
-██████╔╝██║   ██║   ██║   ███████║██║   ██║██║     █████╗
-██╔═══╝ ██║   ██║   ██║   ██╔══██║██║   ██║██║     ██╔══╝
-██║     ╚██████╔╝   ██║   ██║  ██║╚██████╔╝███████╗███████╗
-╚═╝      ╚═════╝    ╚═╝   ╚═╝  ╚═╝ ╚═════╝ ╚══════╝╚══════╝
-
-         D E T E C T I O N   ·   A I
-```
-
-<br/>
-
-### *Road safety isn't always visible.*
-### *So we made it visible.*
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=220&section=header&text=Pothole%20Detection%20AI&fontSize=52&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Road%20safety%20isn't%20always%20visible.%20So%20we%20made%20it%20visible.&descSize=16&descAlignY=58&descColor=cccccc" />
 
 <br/>
 
@@ -33,6 +17,12 @@
 
 ---
 
+Every year, potholes cause millions of vehicle accidents and billions in damage — hazards that appear without warning and disappear from public records just as fast. This project changes that. **Pothole Detection AI** is a full-stack road safety system: a fine-tuned YOLOv8n model detects potholes in real time, a GPS layer logs every finding to a live map, and a voice alert system warns drivers before they reach the hazard — all running on a phone, no special hardware required.
+
+<br/>
+
+---
+
 ## Demo
 
 <div align="center">
@@ -42,12 +32,6 @@
 *Click to watch — Road safety isn't always visible. So we made it visible.*
 
 </div>
-
-<br/>
-
----
-
-Every year, potholes cause millions of vehicle accidents and billions in damage — hazards that appear without warning and disappear from public records just as fast. This project changes that. **Pothole Detection AI** is a full-stack road safety system: a fine-tuned YOLOv8n model detects potholes in real time, a GPS layer logs every finding to a live map, and a voice alert system warns drivers before they reach the hazard — all running on a phone, no special hardware required.
 
 <br/>
 
@@ -303,5 +287,9 @@ for local, remote in [
 [![YouTube](https://img.shields.io/badge/Demo-YouTube-FF0000?style=flat-square&logo=youtube)](https://youtu.be/j16wN9h2V9I)
 
 *Built for safer roads.*
+
+<br/>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=120&section=footer" />
 
 </div>
